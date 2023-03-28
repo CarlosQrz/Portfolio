@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+div form{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    filter: drop-shadow(0px 0px 10px white);
+}
+
+body{
+    background-color: black;
+}
+
+nav{
+    filter: drop-shadow(0px 10px 10px rgba(255, 255, 255, 0.24));
+}
+
+picture{
+    width: 200px;
+}
+
+.img-fluid{
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-radius: 100%;
+}
