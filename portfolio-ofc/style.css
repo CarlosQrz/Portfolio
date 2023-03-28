@@ -1,0 +1,544 @@
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+
+  ::-webkit-scrollbar{
+    width: 4px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0);
+  }
+  ::-webkit-scrollbar-thumb
+  {
+    border-radius:0%;
+    background-color: black;
+  }
+
+  .background{
+    overflow-y: scroll;
+    z-index: -99;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 300%;
+    background: rgb(44,29,75);
+    background: linear-gradient(0deg, rgba(44,29,75,1) 0%, rgba(53,4,156,1) 100%);
+    animation: 13s linear infinite;
+    animation-delay: 0s;
+    animation-name: linear;
+    transition: 240ms;
+  }
+
+  .bolinha1{
+    position: fixed;
+    width: 8rem;
+    height: 8rem;
+    top: 20%;
+    left: 18%;
+    background-color: rgba(214, 183, 255, 0.925);
+    filter: blur(20px);
+    border-radius: 100%;
+    animation: aparecer-ladinhoE 1.5s ease forwards;
+    transition: 0.8s;
+  }
+
+  .bolinha2{
+    position: fixed;
+    width: 12rem;
+    height: 12rem;
+    top: 50%;
+    left: 34%;
+    background-color: rgba(214, 183, 255, 0.925);
+    filter: blur(20px);
+    border-radius: 100%;
+    animation: aparecer-ladinhoD 1.5s ease forwards;
+    transition: 0.8s;
+  }
+
+  .bolinha3{
+    position: fixed;
+    width: 16rem;
+    height: 16rem;
+    top: 10%;
+    left: 80%;
+    background-color: rgba(214, 183, 255, 0.925);
+    filter: blur(20px);
+    border-radius: 100%;
+    animation: a 1.5s ease forwards;
+    transition: 0.8s;
+  }
+
+  .bolinha4{
+    position: fixed;
+    width: 16rem;
+    height: 16rem;
+    top: 10%;
+    left: 80%;
+    background-color: rgba(214, 183, 255, 0.925);
+    filter: blur(20px);
+    border-radius: 100%;
+    animation: a 1.5s ease forwards;
+    transition: 0.8s;
+  }
+
+  .bolinha5{
+    position: fixed;
+    width: 16rem;
+    height: 16rem;
+    top: 10%;
+    left: 80%;
+    background-color: rgba(214, 183, 255, 0.925);
+    filter: blur(20px);
+    border-radius: 100%;
+    animation:  1.5s ease forwards;
+    transition: 0.8s;
+  }
+
+  .linha-sd-container{
+    height: 300px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .linha-entre-sd{
+    transition: 0.8s;
+    animation: linha-cresce 1.8s ease forwards;
+  }
+
+  /*H CONTAINER*/
+
+  .hcontainer {
+    position:fixed;
+    top: 0;
+    z-index: 100;
+    text-align: center;
+    background-color:rgba(0, 0, 0, 0.055);
+    backdrop-filter: blur(10px);
+    color: rgba(255, 255, 255, 0);
+    width: 100%;
+    height: 6%;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration-line: none;
+    text-decoration: none;
+    transition: 0.8s;
+  }
+
+  .li-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 0.2em;
+    margin-left: 7em;
+    margin-right: 1em;
+    animation: aparecer-cimaMT 1.5s ease forwards;
+  }
+
+  .botao-tema{
+    background: black;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .home{
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-left: 13em;
+    color: white;
+    transition: 0.8s;
+    filter: drop-shadow( -2px 1px 0px black);
+  }
+
+  .nome{
+    text-decoration: none;
+    filter: drop-shadow( -2px 1px 0px black);
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+    font-weight: 200;
+    transition: 0.8s;
+    cursor:default;
+    cursor: pointer;
+  }
+
+  .sobre{
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: white;
+    transition: 0.8s;
+    filter: drop-shadow( -2px 1px 0px black);
+  }
+
+  .projetos{
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: white;
+    transition: 0.8s;
+    filter: drop-shadow( -2px 1px 0px black);
+  }
+
+  .contato{
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    transition: 0.8s;
+    filter: drop-shadow( -2px 1px 0px black);
+  }
+
+  .nome:hover{
+    transition: 0.8s;
+    animation: pisca 4s linear infinite;
+  }
+
+  .home:hover{
+    color: rgb(255, 255, 255);
+    filter: drop-shadow(0px 0px 5px white);
+    transition: 0.8s;
+  }
+
+  .sobre:hover{
+    color: rgb(255, 255, 255);
+    filter: drop-shadow(0px 0px 5px white);
+    transition: 0.8s;
+  }
+  
+  .projetos:hover{
+    color: rgb(255, 255, 255);
+    filter: drop-shadow(0px 0px 5px white);
+    transition: 0.8s;
+  }
+
+  .contato:hover{
+    color: rgb(255, 255, 255);
+    filter: drop-shadow(0px 0px 5px white);
+    transition: 0.8s;
+  }
+
+
+  /*S CONTAINER*/
+
+  .scontainer{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 600px;
+    background-color: rgba(255, 0, 0, 0);
+    color: rgba(255, 255, 255, 0);
+    padding: 130px 0px  0px  0px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    text-decoration-line: none;
+    text-decoration: none;
+  }
+
+  .imagem-e-texto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .imagem-perfil{
+    border-radius: 100%;
+    position: relative;
+    z-index: 13;
+    width: 20rem;
+    transition: 0.8s;
+    max-width: 20rem;
+    filter: saturate(70%);
+    animation: aparecer-cima 1.5s ease forwards;
+  }
+
+  .imagem-perfil:hover{
+    transition: 0.8s;
+    transform: scale(1.03);
+  }
+
+  .img2{
+    display: none;
+    position: absolute;
+    z-index: -31;
+    top: 90%;
+    right: 0%;
+    width: 30rem;
+  }
+
+  .texto-perfil{
+    background: rgba(0, 0, 0, 0);
+    width: 600px;
+    position: relative;
+    filter: drop-shadow( -2px 1px 0px black);
+    transform: translateX(-57%);
+    margin-right: 0%;
+    z-index: -100;
+    color: white;
+    opacity: 0;
+    transition: 0.8s;
+    font-size: 30px;
+    font-weight: 600;
+    animation: aparecer-ladinhoDz 1.5s ease forwards;
+  }
+
+  .imagem-e-texto{
+    position: relative;
+  }
+
+  .imagem-e-texto .texto-perfil h1{
+    font-size: 52px;
+  }
+
+  .botao-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .botao-container .download{
+    background: transparent;
+    border: solid 2px white;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 0px 10px 0px 10px;
+    color: white;
+    transition: 0.8s;
+    z-index: 10;
+    cursor: pointer;
+    border-radius: 30px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    animation: aparecer-ladinhoE 1.5s ease forwards;
+  }
+
+  .botao-container .baixar{
+    font-size:13px
+  }
+
+  .botao-container .download{
+    line-height: 20px;
+  }
+
+  .download{
+    filter: drop-shadow( -2px 2px 1px black);
+    height: 3.4rem;
+  }
+
+  .download:hover{
+    filter: drop-shadow(0px 0px 10px rgb(0, 0, 0));
+    background: white;
+    color: black;
+    transition: 0.8s;
+    border-radius: 30px;
+  }
+
+  /*D CONTAINER*/
+
+  .dcontainer{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    z-index: 12;
+    background-color:rgba(0, 0, 0, 0);
+    padding: 40px 0px  0px  0px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    text-decoration-line: none;
+    text-decoration: none;
+  }
+
+  .container-sobre-mim{
+    width: 390px;
+    height: 50px;
+    opacity: 1;
+    text-align: center;
+    background: rgb(147,105,255);
+    background: radial-gradient(circle, rgba(147,105,255,1) 0%, rgba(178,91,237,1) 50%, rgba(209,147,255,1) 100%);
+    box-shadow: 0px 0px 10px white;
+    padding: 20px;
+    border-radius: 2em;
+    color: rgb(255, 255, 255);
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation: aparecer-ladinhoD 1.5s ease forwards;
+    transition: 1s;
+  }
+
+  .container-sobre-mim .titulo-sobre{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    transition: 1s;
+  }
+
+  .container-sobre-mim .texto-sobre{
+    opacity: 0;
+    display: none;
+    transition: 1s;
+  }
+
+  .container-sobre-mim:hover{
+    background: rgb(147,105,255);
+    background: radial-gradient(circle, rgba(147,105,255,1) 0%, rgba(178,91,237,1) 50%, rgba(209,147,255,1) 100%);
+    box-shadow: 0px 0px 20px white;
+    height: 540px;
+    transition: 1s;
+  }
+
+  .container-sobre-mim:hover .titulo-sobre{
+    opacity: 1;
+    display: flex;
+    font-size: 60px;
+    margin-right: auto;
+    transition: 0.5s;
+  }
+
+  .container-sobre-mim:hover .texto-sobre{
+    opacity: 1;
+    display: flex;
+    font-size: 22px;
+    transition: 1s;
+  }
+
+  .container-sobre-mim:hover .sobre-buttons-container{
+    z-index: 10;
+    position: absolute;
+    top: 6%;
+    right: 6%;
+    display: flex;
+    transition: 1s;
+  }
+
+  .titulo-sobre{
+    font-size: 50px;
+    font-weight: 700;
+    opacity: 1;
+  }
+
+  .container-sobre-mim:hover .linha-titulo-texto-sobre{
+    width: 200px;
+    display: flex;
+  }
+
+  .linha-titulo-texto-sobre{
+    display: none;
+  }
+
+  .sobre-buttons-container{
+    z-index: 10;
+    position: absolute;
+    top: 6%;
+    right: 6%;
+    display: none;
+    overflow: hidden;
+  }
+
+  .fechar{
+    background-color: rgba(255, 255, 255, 0);
+    width: 3.4rem;
+    height: 1.8rem;
+    color: rgb(255, 255, 255);
+    border: none;
+    transition: 540ms;
+  }
+
+  .expandir{
+    background-color: rgba(255, 255, 255, 0);
+    width: 3.4rem;
+    height: 1.8rem;
+    color: rgb(255, 255, 255);
+    border: none;
+    transition: 540ms;
+  }
+
+  .minimizar{
+    background-color: rgba(255, 255, 255, 0);
+    width: 3.4rem;
+    height: 1.8rem;
+    color: rgb(255, 255, 255);
+    border: none;
+    transition: 540ms;
+  }
+
+  .fechar:hover{
+    background-color: rgb(243, 0, 0);
+    transition: 280ms;
+  }
+
+  .expandir:hover{
+    background-color: rgba(63, 62, 62, 0.849);
+    transition: 280ms;
+  }
+
+  .minimizar:hover{
+    background-color: rgba(63, 62, 62, 0.849);
+    transition: 280ms;
+  }
+
+  .rodape{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style-type: none;
+    list-style: none;
+    z-index: 12;
+    width: 100%;
+    height: 113px;
+    top: 268.3%;
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+  }
+
+  .rodape-li-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    list-style-type: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px
+  }
+
+  .rodape-li-container .direitos{
+    font-weight: 500;
+  }
+
+  .rodape-li-container .redes-sociais{
+    display: flex;
+    flex-direction: row;
+    width: 1rem;
+    height: 1rem;
+    max-width: 1rem;
+    max-height: 1rem;
+    overflow: hidden;
+  }

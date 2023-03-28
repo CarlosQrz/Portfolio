@@ -1,0 +1,305 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+  ::-webkit-scrollbar-thumb{
+    display: none;
+}
+
+.background{
+    z-index: -99;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgb(44,29,75);
+    background: linear-gradient(0deg, rgba(44,29,75,1) 0%, rgba(53,4,156,1) 100%);
+    animation: 13s linear infinite;
+    animation-delay: 0s;
+    animation-name: linear;
+    transition: 240ms;
+    overflow: hidden;
+}
+
+
+.bolinha1{
+    position: fixed;
+    width: 8rem;
+    height: 8rem;
+    top: 20%;
+    left: 18%;
+    background-color: rgba(214, 183, 255, 0.925);
+    filter: blur(20px);
+    border-radius: 100%;
+    animation: aparecer-ladinhoE 1.5s ease forwards;
+    transition: 0.8s;
+}
+
+.bolinha2{
+    position: fixed;
+    width: 12rem;
+    height: 12rem;
+    top: 48%;
+    left: 35%;
+    background-color: rgba(214, 183, 255, 0.925);
+    filter: blur(20px);
+    border-radius: 100%;
+    animation: aparecer-ladinhoD 1.5s ease forwards;
+    transition: 0.8s;
+  }
+
+.bolinha3{
+    position: fixed;
+    width: 14rem;
+    height: 14rem;
+    top: 8%;
+    left: 51%;
+    background-color: rgba(214, 183, 255, 0.925);
+    filter: blur(20px);
+    border-radius: 100%;
+    animation: aparecer-cimaMT   1.5s ease forwards;
+    transition: 0.8s;
+}
+
+.bolinha4{
+    position: fixed;
+    width: 16rem;
+    height: 16rem;
+    top: 60%;
+    left: 50%;
+    background-color: rgba(214, 183, 255, 0.925);
+    filter: blur(20px);
+    border-radius: 100%;
+    animation: aparecer-baixo 1.5s ease forwards;
+    transition: 0.8s;
+}
+
+.bolinha5{
+    position: fixed;
+    width: 24rem;
+    height: 24rem;
+    top: -12%;
+    left: 82%;
+    background-color: rgba(214, 183, 255, 0.925);
+    filter: blur(20px);
+    border-radius: 100%;
+    animation: aparecer-ladinhoD 1.5s ease forwards;
+    transition: 0.8s;
+}
+
+.bolinha6{
+    position: fixed;
+    width: 18rem;
+    height: 18rem;
+    top: 80%;
+    left: 5%;
+    background-color: rgba(214, 183, 255, 0.925);
+    filter: blur(20px);
+    border-radius: 100%;
+    animation:  aparecer-baixo 1.5s ease forwards;
+    transition: 0.8s;
+}
+
+.container-meio{
+    position: relative;
+    margin-top: 100px;
+    z-index: 1;
+    width: 480px;
+    height: 650px;
+    background-color: rgba(0, 0, 0, 0.075);
+    backdrop-filter: blur(10px);
+    color: rgba(255, 255, 255, 0);
+    border-radius: 100px;
+    box-shadow: 0px 0px 20px rgb(255, 255, 255);
+    padding: 0px 0px  0px  0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-decoration-line: none;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    animation: aparecer-baixo 1.5s ease forwards;
+}
+
+.container-pp-txt{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.container-perfil-port{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 70%;
+}
+
+.img-perfil{
+    border-radius: 100%;
+    margin-top: 8%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    filter: saturate(0%);
+    animation: aparecer-cima 1.5s ease forwards;
+}
+
+.a-container{
+    margin-bottom: 35px;
+    animation: aparecer-cimaMT 1.5s ease forwards;
+}
+
+.nome{
+    position: relative;
+    width: 20%;
+    text-decoration: none;
+    filter: drop-shadow( -2px 1px 0px black);
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+    font-weight: 200;
+    transition: 0.8s;
+    cursor:default;
+    cursor: pointer;
+    padding-left: 12%;
+    padding-top: 2%;
+}
+
+.nome:hover{
+    transition: 0.8s;
+    animation: pisca 4s linear infinite;
+}
+
+
+.sociais{
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 200px;
+    height: 40px;
+}
+
+.whatsapp{
+    border-radius: 30px;
+    animation: aparecer-cimaMT  1.5s ease forwards;
+    transition: 0.8s;
+}
+
+.linkedin{
+    border-radius: 30px;
+    animation: aparecer-cimaMT  1.5s ease forwards;
+    transition: 0.8s;
+}
+
+.github{
+    border-radius: 30px;
+    animation: aparecer-cimaMT 1.5s ease forwards;
+    transition: 0.8s;
+}
+
+.whatsapp:hover{
+    border-radius: 30px;
+    background-color: rgb(48, 255, 75);
+    transition: 0.8s;
+}
+
+.linkedin:hover{ 
+    border-radius: 30px;
+    background-color: rgb(0, 162, 255);
+    transition: 0.8s;
+}
+
+.github:hover{
+    border-radius: 30px;
+    background-color: rgb(99, 63, 255);
+    transition: 0.8s;
+}
+
+.port-button{
+    position: relative;
+    width: 210px;
+    font-size: 1.1rem;
+    height: 50px;
+    border: solid 2px rgb(0, 0, 0);
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    transition: 0.8s;
+    font-weight: 700;
+    margin-top: 20px;
+    animation: aparecer-ladinhoD 1.5s ease forwards;
+}
+
+.container-port-button{
+    position: relative;
+    padding: 20px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-linha-mp{
+    height: 50px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+  .linha-entre-mp{
+    border: solid 1px black;
+    position: relative;
+    transition: 0.8s;
+    animation: linha-cresce-hello 1.8s ease forwards;
+}
+
+  .port-button:hover{
+    width: 250px;
+    border-bottom-left-radius: 400px;
+    border-top-right-radius: 400px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.bottom-container{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+
+    animation: aparecer-baixo 1.5s ease forwards;
+}
+
+.direitos{
+    position: relative;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+}
