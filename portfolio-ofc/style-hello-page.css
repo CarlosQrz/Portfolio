@@ -158,7 +158,7 @@
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
-    filter: saturate(0%);
+    filter: saturate(74%);
     animation: aparecer-cima 1.5s ease forwards;
 }
 
